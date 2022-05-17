@@ -1,0 +1,28 @@
+<!-- <!DOCTYPE html> -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="Yanzhou Pan">
+<meta name="date" content="Jan 2021">
+
+<html>
+  <head>
+    <title>全民热舞 - 关键帧获取工具</title>
+    <link rel="stylesheet" href="css/main.css" />
+ </head>
+
+  <body>
+    <h1>关键帧获取工具</h1>
+    <div id="message"></div>
+    <input type="file" id="input_file" accept="video/*"/>
+    <br>
+    <video id='video' controls width="480" height="270"></video>
+    <br><br>
+    <textarea id="key_frame" rows="20" cols="40" margin-top=100px placeholder="请在第一行输入帧率，然后按行输入关键帧信息"></textarea>
+    <button  id="btn_submit"> 开始生成 </button>
+    <button id="btn_download" disabled="true"> 下载数据 </button>
+    <button  id="btn_reload"> 重置 </button>
+    <hr>
+    <div id="output"></div>
+  </body>
+  <script src="js/main.js"> </script>
+</html>
